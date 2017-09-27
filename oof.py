@@ -50,6 +50,8 @@ async def on_message(message):
 
 	if message.channel.is_private:
 		return
+	if message.server.id == '264445053596991498'
+
 
 	for role in message.server.roles:
 		if 'unoofable' in role.name:
