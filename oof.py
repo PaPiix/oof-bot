@@ -128,8 +128,6 @@ async def feedback(ctx, *, message: str = None):
 	await try_del(ctx.message)
 	if not message:
 		await try_del(ctx.message)
-		sent = await bot.say('no feedback message passed')
-		await slp_del(sent)
 		sent = await bot.say('no feedback message was passed')
 		return await slp_del(sent, 2)
 	auth = ctx.message.author
